@@ -27,7 +27,7 @@ diagnostics.post('/', (req, res) => {
   } else {
     res.json({
       message: 'Object is valid but not logging. Check front end data.',
-      error_id: payload.error_id,
+      error_id: tipData.error_id,
     });
   } 
 });

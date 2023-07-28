@@ -134,7 +134,7 @@ const submitDiagnostics = (submissionObj) => {
     .then((response) => response.json())
     .then(() => showErrors(submissionObj.errors))
     .catch((error) => {
-      console.error('Error in POST request:', error);
+      console.error('Error posting:', error);
     });
 };
 
